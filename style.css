@@ -1,0 +1,48 @@
+.heading{
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+.app-main{
+    text-align: center;
+}
+.enter-input{
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    padding-left: 0.5%;
+    background: aliceblue;
+    font-size: 1.3rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    
+}
+.weather-here{
+    padding-top: 3%;
+    font-size: 1.2rem;
+}
+.temp{
+    font-size: 3.5rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+body {
+    background-image: url("bgimg.jpg");
+    color: white;
+
+    background-size: cover;
+    
+   }
+/* .bkgg{
+
+}    */
+
+
+@media screen and (max-width: 600px) {
+    body {
+        background-size: auto;
+        
+    }
+ } 

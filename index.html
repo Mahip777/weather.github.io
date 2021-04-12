@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script> -->
+
+</head>
+
+<body>
+
+    <div class="bkgg">
+        <div class="app-main">
+            <div class="head">
+                <h1 class="heading">WEATHER APP</h1>
+            </div>
+            <div class="searchInputBox">
+                <input type="text"  class="enter-input" id="enter-input" placeholder="Search for a city..." />
+            </div>
+            <!-- <div id="match-list"></div> -->
+            <!-- <div id="controls">
+                <select id="country">
+                  <option value="all">All</option>
+                  <option value="au">Australia</option>
+                  <option value="br">Brazil</option>
+                  <option value="ca">Canada</option>
+                  <option value="fr">France</option>
+                  <option value="de">Germany</option>
+                  <option value="mx">Mexico</option>
+                  <option value="nz">New Zealand</option>
+                  <option value="it">Italy</option>
+                  <option value="za">South Africa</option>
+                  <option value="es">Spain</option>
+                  <option value="pt">Portugal</option>
+                  <option value="us" selected>U.S.A.</option>
+                  <option value="uk">United Kingdom</option>
+                </select>
+              </div> -->
+            
+    
+    
+            <div class="weather-here">
+                <div class="location-details">
+                    <div class="city" id="city">Jaipur, IN</div><br>
+                    <div class="date" id="date">11 April (Sunday), 2020</div><br>
+                </div>
+    
+    
+    
+                <div class="weather-status">
+                    <div class="temp" id="temp">34&deg;C</div><br>
+                    <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div><br>
+                    <div class="weather" id="weather">Clear</div>
+                    <div class="img"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="weather.js"></script>
+    <script>
+        function activatePlacesSearch(){
+            var input = document.getElementById('enter-input');
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHM4aTAMtUrEi4eJPVe-JyjuaN938hE-w&libraries=places&callback=activatePlacesSearch">
+    </script>
+</body>
+
+</html>
